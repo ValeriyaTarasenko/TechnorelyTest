@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="ENp-kD-lnp">
+            <objects>
+                <viewController storyboardIdentifier="Settings" id="csx-Xg-ieW" customClass="SettingsViewController" customModule="TechnorelyTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c03-qH-TCS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use ofline mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDp-dj-9mx">
+                                <rect key="frame" x="20" y="64" width="141" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-oX-zlB">
+                                <rect key="frame" x="20" y="108" width="51" height="31"/>
+                                <connections>
+                                    <action selector="settingsSwitch:" destination="csx-Xg-ieW" eventType="valueChanged" id="Wib-R1-eFd"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LDp-dj-9mx" firstAttribute="leading" secondItem="gYT-iL-9Us" secondAttribute="leading" constant="20" id="CmI-6H-OHP"/>
+                            <constraint firstItem="VYJ-oX-zlB" firstAttribute="leading" secondItem="gYT-iL-9Us" secondAttribute="leading" constant="20" id="TCm-Kk-exc"/>
+                            <constraint firstItem="VYJ-oX-zlB" firstAttribute="top" secondItem="LDp-dj-9mx" secondAttribute="bottom" constant="20" id="naf-oX-tDk"/>
+                            <constraint firstItem="LDp-dj-9mx" firstAttribute="top" secondItem="gYT-iL-9Us" secondAttribute="top" constant="20" id="sr2-fQ-0Ey"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gYT-iL-9Us"/>
+                    </view>
+                    <connections>
+                        <outlet property="modeSwitch" destination="VYJ-oX-zlB" id="Hud-tc-wgu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xby-KA-erm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="69"/>
+        </scene>
+    </scenes>
+</document>
